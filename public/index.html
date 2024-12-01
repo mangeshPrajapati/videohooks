@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Hooks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #downloadButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #downloadButton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 py-6">
+        <div class="container mx-auto text-center text-white">
+            <h1 class="text-3xl font-semibold">Video Hooks</h1>
+            <p class="text-lg mt-2">Download Video Hooks to Keep Your Audience Engaged</p>
+        </div>
+    </header>
+
+    <!-- Loading Message -->
+    <div id="loading" class="text-center text-xl text-gray-600 mt-12">
+        Loading videos...
+    </div>
+
+    <!-- Video Container -->
+    <div id="videoContainer"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6 mx-auto px-4 max-w-screen-xl">
+        <!-- Video items will be dynamically added here -->
+    </div>
+
+    <!-- Pagination controls -->
+    <div id="pagination" class="flex justify-center space-x-4 mt-6 px-4">
+        <!-- Pagination buttons will be dynamically added here -->
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
